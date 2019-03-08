@@ -230,7 +230,7 @@ public class ClienteView extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-        if(JOptionPane.showConfirmDialog(this, "Deseja realmente excluir esssse cliente", "Excluir cliente",
+        if(JOptionPane.showConfirmDialog(this, "Deseja realmente fazer esta exclusao", "Excluir cliente",
                 JOptionPane.YES_NO_OPTION)== JOptionPane.YES_OPTION){
         clienteControl.excluir();
         JOptionPane.showMessageDialog(this, "Cliente excluido com sucesso", "Excluir Cliente",
