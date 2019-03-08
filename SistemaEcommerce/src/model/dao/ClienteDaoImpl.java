@@ -48,20 +48,20 @@ public class ClienteDaoImpl implements ClienteDao {
       public List<Cliente> pesquisar(Cliente cliente){
 
         EntityManager em = Conexao.getEntityManager();
-        StringBuilder sql = new StringBuilder("From Cliente c Where 1 = 1");
+        StringBuilder sql = new StringBuilder("From Cliente c " + "WHERE 1 = 1");
         if(cliente.getCodigo()!= null){
-        sql.append("and c.codigo =:codigo");
+        sql.append("AND c.codigo =:codigo");
         }
 
         if(cliente.getNome()!= null && !cliente.getNome().equals("")){
-        sql.append("and c.nome like :nome");
+        sql.append("AND c.Nome LIKE :Nome");
         }
         Query query = em.createQuery(sql.toString());
         if(cliente.getCodigo() != null){
             query.setParameter("codigo", cliente.getCodigo());   
         }
         if(cliente.getNome()!= null && !cliente.getNome().equals("")){
-       query.setParameter("nome","%" + cliente.getNome());   
+       query.setParameter("Nome","%" + cliente.getNome() + "%");   
         }
         return query.getResultList();
     }

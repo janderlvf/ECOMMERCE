@@ -131,6 +131,12 @@ public class ClienteView extends javax.swing.JInternalFrame {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ELProperty.create("${clienteControl.clienteDigitado.nome}"), txtNome, org.jdesktop.beansbinding.BeanProperty.create("text"));
         bindingGroup.addBinding(binding);
 
+        txtNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlCamposLayout = new javax.swing.GroupLayout(pnlCampos);
         pnlCampos.setLayout(pnlCamposLayout);
         pnlCamposLayout.setHorizontalGroup(
@@ -236,6 +242,10 @@ public class ClienteView extends javax.swing.JInternalFrame {
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
         clienteControl.pesquisar();
     }//GEN-LAST:event_btnPesquisarActionPerformed
+
+    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

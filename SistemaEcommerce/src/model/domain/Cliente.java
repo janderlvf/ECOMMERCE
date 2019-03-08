@@ -26,9 +26,7 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "CD_CLIENTE")
     private Integer codigo;
-    @Column(name= "NM_CLIENTE",length = 255,nullable = false)
-    
-    
+    @Column(name= "NM_CLIENTE",length = 255,nullable = false)  
     private String Nome;
     
     public Cliente(){
