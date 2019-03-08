@@ -13,7 +13,7 @@ import model.domain.Cliente;
  * @author jvianafi
  */
 public interface ClienteDao {
-
+//teste
     void excluir(Cliente cliente);
 
     List<Cliente> pesquisar(Cliente cliente);
