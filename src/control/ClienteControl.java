@@ -19,6 +19,8 @@ import org.jdesktop.observablecollections.ObservableCollections;
  *
  * @author jvianafi
  */
+
+
 public class ClienteControl {
     
     private PropertyChangeSupport PropertyChangeSupport  = new PropertyChangeSupport(this);
