@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author jvianafi
+ * @author jvianafifffffffffffffffffffffffff
  */
 public class ClienteView extends javax.swing.JInternalFrame {
     
